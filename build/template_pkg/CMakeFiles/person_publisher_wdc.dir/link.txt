@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/person_publisher_wdc.dir/src/topic_learn/person_publisher.cpp.o  -o /home/wdc/Desktop/wdc_template_workspace/devel/lib/template_pkg/person_publisher_wdc 
