@@ -7,11 +7,11 @@ Copyright 2020 GuYueHome (www.guyuehome.com).
  */
  
 #include <ros/ros.h>
-#include "template_pkg/Person_sev.h"
+#include "template_pkg/Person_srv.h"
 
 // service回调函数，输入参数req，输出参数res
-bool personCallback(learning_service::Person::Request  &req,
-         			learning_service::Person::Response &res)
+bool personCallback(template_pkg::Person_srv::Request  &req,
+         			template_pkg::Person_srv::Response &res)
 {
     // 显示请求数据
     ROS_INFO("Person: name:%s  age:%d  sex:%d", req.name.c_str(), req.age, req.sex);

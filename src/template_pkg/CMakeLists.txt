@@ -162,9 +162,12 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
+
+# param
 add_executable(parameter_config src/param_learn/parameter_config.cpp)
 target_link_libraries(parameter_config ${catkin_LIBRARIES})
 
+# topic
 add_executable(person_publisher src/topic_learn/person_publisher.cpp)
 target_link_libraries(person_publisher ${catkin_LIBRARIES})
 
@@ -176,6 +179,19 @@ target_link_libraries(turtle_pos_subscriber ${catkin_LIBRARIES})
 
 add_executable(turtle_velocity_publisher src/topic_learn/velocity_publisher.cpp)
 target_link_libraries(turtle_velocity_publisher ${catkin_LIBRARIES})
+
+# service
+add_executable(person_client src/service_learn/person_client.cpp)
+target_link_libraries(person_client ${catkin_LIBRARIES})
+
+add_executable(person_server src/service_learn/person_server.cpp)
+target_link_libraries(person_server ${catkin_LIBRARIES})
+
+add_executable(turtle_server src/service_learn/turtle_command_server.cpp)
+target_link_libraries(turtle_server ${catkin_LIBRARIES})
+
+add_executable(turtle_client src/service_learn/turtle_spawn.cpp)
+target_link_libraries(turtle_client ${catkin_LIBRARIES})
 
 
 

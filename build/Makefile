@@ -285,6 +285,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named turtle_server
+
+# Build rule for target.
+turtle_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_server
+.PHONY : turtle_server
+
+# fast build rule for target.
+turtle_server/fast:
+	$(MAKE) -f template_pkg/CMakeFiles/turtle_server.dir/build.make template_pkg/CMakeFiles/turtle_server.dir/build
+.PHONY : turtle_server/fast
+
+#=============================================================================
+# Target rules for targets named person_client
+
+# Build rule for target.
+person_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 person_client
+.PHONY : person_client
+
+# fast build rule for target.
+person_client/fast:
+	$(MAKE) -f template_pkg/CMakeFiles/person_client.dir/build.make template_pkg/CMakeFiles/person_client.dir/build
+.PHONY : person_client/fast
+
+#=============================================================================
 # Target rules for targets named turtle_pos_subscriber
 
 # Build rule for target.
@@ -387,6 +413,19 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 rosgraph_msgs_generate_messages_eus/fast:
 	$(MAKE) -f template_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make template_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named person_server
+
+# Build rule for target.
+person_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 person_server
+.PHONY : person_server
+
+# fast build rule for target.
+person_server/fast:
+	$(MAKE) -f template_pkg/CMakeFiles/person_server.dir/build.make template_pkg/CMakeFiles/person_server.dir/build
+.PHONY : person_server/fast
 
 #=============================================================================
 # Target rules for targets named template_pkg_generate_messages_nodejs
@@ -571,6 +610,19 @@ template_pkg_generate_messages/fast:
 .PHONY : template_pkg_generate_messages/fast
 
 #=============================================================================
+# Target rules for targets named turtle_client
+
+# Build rule for target.
+turtle_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_client
+.PHONY : turtle_client
+
+# fast build rule for target.
+turtle_client/fast:
+	$(MAKE) -f template_pkg/CMakeFiles/turtle_client.dir/build.make template_pkg/CMakeFiles/turtle_client.dir/build
+.PHONY : turtle_client/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -735,6 +787,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... turtle_server"
+	@echo "... person_client"
 	@echo "... turtle_pos_subscriber"
 	@echo "... person_subscriber"
 	@echo "... person_publisher"
@@ -743,6 +797,7 @@ help:
 	@echo "... turtle_velocity_publisher"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... person_server"
 	@echo "... template_pkg_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -757,6 +812,7 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... template_pkg_generate_messages"
+	@echo "... turtle_client"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... template_pkg_genlisp"
 	@echo "... template_pkg_generate_messages_lisp"

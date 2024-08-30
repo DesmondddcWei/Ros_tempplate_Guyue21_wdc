@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+template_pkg/CMakeFiles/turtle_server.dir/rule:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 template_pkg/CMakeFiles/turtle_server.dir/rule
+.PHONY : template_pkg/CMakeFiles/turtle_server.dir/rule
+
+# Convenience name for target.
+turtle_server: template_pkg/CMakeFiles/turtle_server.dir/rule
+
+.PHONY : turtle_server
+
+# fast build rule for target.
+turtle_server/fast:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_server.dir/build.make template_pkg/CMakeFiles/turtle_server.dir/build
+.PHONY : turtle_server/fast
+
+# Convenience name for target.
+template_pkg/CMakeFiles/person_client.dir/rule:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 template_pkg/CMakeFiles/person_client.dir/rule
+.PHONY : template_pkg/CMakeFiles/person_client.dir/rule
+
+# Convenience name for target.
+person_client: template_pkg/CMakeFiles/person_client.dir/rule
+
+.PHONY : person_client
+
+# fast build rule for target.
+person_client/fast:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_client.dir/build.make template_pkg/CMakeFiles/person_client.dir/build
+.PHONY : person_client/fast
+
+# Convenience name for target.
 template_pkg/CMakeFiles/turtle_pos_subscriber.dir/rule:
 	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 template_pkg/CMakeFiles/turtle_pos_subscriber.dir/rule
 .PHONY : template_pkg/CMakeFiles/turtle_pos_subscriber.dir/rule
@@ -286,6 +316,21 @@ rosgraph_msgs_generate_messages_eus: template_pkg/CMakeFiles/rosgraph_msgs_gener
 rosgraph_msgs_generate_messages_eus/fast:
 	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make template_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+template_pkg/CMakeFiles/person_server.dir/rule:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 template_pkg/CMakeFiles/person_server.dir/rule
+.PHONY : template_pkg/CMakeFiles/person_server.dir/rule
+
+# Convenience name for target.
+person_server: template_pkg/CMakeFiles/person_server.dir/rule
+
+.PHONY : person_server
+
+# fast build rule for target.
+person_server/fast:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_server.dir/build.make template_pkg/CMakeFiles/person_server.dir/build
+.PHONY : person_server/fast
 
 # Convenience name for target.
 template_pkg/CMakeFiles/template_pkg_generate_messages_nodejs.dir/rule:
@@ -498,6 +543,21 @@ template_pkg_generate_messages/fast:
 .PHONY : template_pkg_generate_messages/fast
 
 # Convenience name for target.
+template_pkg/CMakeFiles/turtle_client.dir/rule:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 template_pkg/CMakeFiles/turtle_client.dir/rule
+.PHONY : template_pkg/CMakeFiles/turtle_client.dir/rule
+
+# Convenience name for target.
+turtle_client: template_pkg/CMakeFiles/turtle_client.dir/rule
+
+.PHONY : turtle_client
+
+# fast build rule for target.
+turtle_client/fast:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_client.dir/build.make template_pkg/CMakeFiles/turtle_client.dir/build
+.PHONY : turtle_client/fast
+
+# Convenience name for target.
 template_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 template_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : template_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -689,6 +749,114 @@ src/param_learn/parameter_config.cpp.s:
 	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/parameter_config.dir/build.make template_pkg/CMakeFiles/parameter_config.dir/src/param_learn/parameter_config.cpp.s
 .PHONY : src/param_learn/parameter_config.cpp.s
 
+src/service_learn/person_client.o: src/service_learn/person_client.cpp.o
+
+.PHONY : src/service_learn/person_client.o
+
+# target to build an object file
+src/service_learn/person_client.cpp.o:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_client.dir/build.make template_pkg/CMakeFiles/person_client.dir/src/service_learn/person_client.cpp.o
+.PHONY : src/service_learn/person_client.cpp.o
+
+src/service_learn/person_client.i: src/service_learn/person_client.cpp.i
+
+.PHONY : src/service_learn/person_client.i
+
+# target to preprocess a source file
+src/service_learn/person_client.cpp.i:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_client.dir/build.make template_pkg/CMakeFiles/person_client.dir/src/service_learn/person_client.cpp.i
+.PHONY : src/service_learn/person_client.cpp.i
+
+src/service_learn/person_client.s: src/service_learn/person_client.cpp.s
+
+.PHONY : src/service_learn/person_client.s
+
+# target to generate assembly for a file
+src/service_learn/person_client.cpp.s:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_client.dir/build.make template_pkg/CMakeFiles/person_client.dir/src/service_learn/person_client.cpp.s
+.PHONY : src/service_learn/person_client.cpp.s
+
+src/service_learn/person_server.o: src/service_learn/person_server.cpp.o
+
+.PHONY : src/service_learn/person_server.o
+
+# target to build an object file
+src/service_learn/person_server.cpp.o:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_server.dir/build.make template_pkg/CMakeFiles/person_server.dir/src/service_learn/person_server.cpp.o
+.PHONY : src/service_learn/person_server.cpp.o
+
+src/service_learn/person_server.i: src/service_learn/person_server.cpp.i
+
+.PHONY : src/service_learn/person_server.i
+
+# target to preprocess a source file
+src/service_learn/person_server.cpp.i:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_server.dir/build.make template_pkg/CMakeFiles/person_server.dir/src/service_learn/person_server.cpp.i
+.PHONY : src/service_learn/person_server.cpp.i
+
+src/service_learn/person_server.s: src/service_learn/person_server.cpp.s
+
+.PHONY : src/service_learn/person_server.s
+
+# target to generate assembly for a file
+src/service_learn/person_server.cpp.s:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/person_server.dir/build.make template_pkg/CMakeFiles/person_server.dir/src/service_learn/person_server.cpp.s
+.PHONY : src/service_learn/person_server.cpp.s
+
+src/service_learn/turtle_command_server.o: src/service_learn/turtle_command_server.cpp.o
+
+.PHONY : src/service_learn/turtle_command_server.o
+
+# target to build an object file
+src/service_learn/turtle_command_server.cpp.o:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_server.dir/build.make template_pkg/CMakeFiles/turtle_server.dir/src/service_learn/turtle_command_server.cpp.o
+.PHONY : src/service_learn/turtle_command_server.cpp.o
+
+src/service_learn/turtle_command_server.i: src/service_learn/turtle_command_server.cpp.i
+
+.PHONY : src/service_learn/turtle_command_server.i
+
+# target to preprocess a source file
+src/service_learn/turtle_command_server.cpp.i:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_server.dir/build.make template_pkg/CMakeFiles/turtle_server.dir/src/service_learn/turtle_command_server.cpp.i
+.PHONY : src/service_learn/turtle_command_server.cpp.i
+
+src/service_learn/turtle_command_server.s: src/service_learn/turtle_command_server.cpp.s
+
+.PHONY : src/service_learn/turtle_command_server.s
+
+# target to generate assembly for a file
+src/service_learn/turtle_command_server.cpp.s:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_server.dir/build.make template_pkg/CMakeFiles/turtle_server.dir/src/service_learn/turtle_command_server.cpp.s
+.PHONY : src/service_learn/turtle_command_server.cpp.s
+
+src/service_learn/turtle_spawn.o: src/service_learn/turtle_spawn.cpp.o
+
+.PHONY : src/service_learn/turtle_spawn.o
+
+# target to build an object file
+src/service_learn/turtle_spawn.cpp.o:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_client.dir/build.make template_pkg/CMakeFiles/turtle_client.dir/src/service_learn/turtle_spawn.cpp.o
+.PHONY : src/service_learn/turtle_spawn.cpp.o
+
+src/service_learn/turtle_spawn.i: src/service_learn/turtle_spawn.cpp.i
+
+.PHONY : src/service_learn/turtle_spawn.i
+
+# target to preprocess a source file
+src/service_learn/turtle_spawn.cpp.i:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_client.dir/build.make template_pkg/CMakeFiles/turtle_client.dir/src/service_learn/turtle_spawn.cpp.i
+.PHONY : src/service_learn/turtle_spawn.cpp.i
+
+src/service_learn/turtle_spawn.s: src/service_learn/turtle_spawn.cpp.s
+
+.PHONY : src/service_learn/turtle_spawn.s
+
+# target to generate assembly for a file
+src/service_learn/turtle_spawn.cpp.s:
+	cd /home/wdc/Desktop/wdc_template_workspace/build && $(MAKE) -f template_pkg/CMakeFiles/turtle_client.dir/build.make template_pkg/CMakeFiles/turtle_client.dir/src/service_learn/turtle_spawn.cpp.s
+.PHONY : src/service_learn/turtle_spawn.cpp.s
+
 src/topic_learn/person_publisher.o: src/topic_learn/person_publisher.cpp.o
 
 .PHONY : src/topic_learn/person_publisher.o
@@ -806,6 +974,8 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... turtle_server"
+	@echo "... person_client"
 	@echo "... turtle_pos_subscriber"
 	@echo "... person_subscriber"
 	@echo "... person_publisher"
@@ -815,6 +985,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install/local"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... person_server"
 	@echo "... template_pkg_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... test"
@@ -831,6 +1002,7 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... template_pkg_generate_messages"
+	@echo "... turtle_client"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... template_pkg_genlisp"
 	@echo "... template_pkg_generate_messages_lisp"
@@ -846,6 +1018,18 @@ help:
 	@echo "... src/param_learn/parameter_config.o"
 	@echo "... src/param_learn/parameter_config.i"
 	@echo "... src/param_learn/parameter_config.s"
+	@echo "... src/service_learn/person_client.o"
+	@echo "... src/service_learn/person_client.i"
+	@echo "... src/service_learn/person_client.s"
+	@echo "... src/service_learn/person_server.o"
+	@echo "... src/service_learn/person_server.i"
+	@echo "... src/service_learn/person_server.s"
+	@echo "... src/service_learn/turtle_command_server.o"
+	@echo "... src/service_learn/turtle_command_server.i"
+	@echo "... src/service_learn/turtle_command_server.s"
+	@echo "... src/service_learn/turtle_spawn.o"
+	@echo "... src/service_learn/turtle_spawn.i"
+	@echo "... src/service_learn/turtle_spawn.s"
 	@echo "... src/topic_learn/person_publisher.o"
 	@echo "... src/topic_learn/person_publisher.i"
 	@echo "... src/topic_learn/person_publisher.s"

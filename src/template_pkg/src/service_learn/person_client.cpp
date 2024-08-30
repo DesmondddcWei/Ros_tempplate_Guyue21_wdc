@@ -7,7 +7,7 @@ Copyright 2020 GuYueHome (www.guyuehome.com).
  */
 
 #include <ros/ros.h>
-#include "template_pkg/Person_sev.h"
+#include "template_pkg/Person_srv.h"
 
 int main(int argc, char** argv)
 {
@@ -19,13 +19,13 @@ int main(int argc, char** argv)
 
     // 发现/spawn服务后，创建一个服务客户端，连接名为/spawn的service
 	ros::service::waitForService("/show_person");
-	ros::ServiceClient person_client = node.serviceClient<learning_service::Person>("/show_person");
+	ros::ServiceClient person_client = node.serviceClient<template_pkg::Person_srv>("/show_person");
 
     // 初始化learning_service::Person的请求数据
-	learning_service::Person srv;
+	template_pkg::Person_srv srv;
 	srv.request.name = "Tom";
 	srv.request.age  = 20;
-	srv.request.sex  = learning_service::Person::Request::male;
+	srv.request.sex  = template_pkg::Person_srv::Request::male;
 
     // 请求服务调用
 	ROS_INFO("Call service to show person[name:%s, age:%d, sex:%d]", 
