@@ -20,23 +20,23 @@ int main(int argc, char **argv)
     ros::NodeHandle node;
 
     // 读取背景颜色参数
-	ros::param::get("/background_r", red);
-	ros::param::get("/background_g", green);
-	ros::param::get("/background_b", blue);
+	ros::param::get("turtlesim/background_r", red);
+	ros::param::get("turtlesim/background_g", green);
+	ros::param::get("turtlesim/background_b", blue);
 
 	ROS_INFO("Get Backgroud Color[%d, %d, %d]", red, green, blue);
 
 	// 设置背景颜色参数
-	ros::param::set("/background_r", 255);
-	ros::param::set("/background_g", 255);
-	ros::param::set("/background_b", 255);
+	ros::param::set("turtlesim/background_r", 255);
+	ros::param::set("turtlesim/background_g", 255);
+	ros::param::set("turtlesim/background_b", 255);
 
 	ROS_INFO("Set Backgroud Color[255, 255, 255]");
 
     // 读取背景颜色参数
-	ros::param::get("/background_r", red);
-	ros::param::get("/background_g", green);
-	ros::param::get("/background_b", blue);
+	ros::param::get("turtlesim/background_r", red);
+	ros::param::get("turtlesim/background_g", green);
+	ros::param::get("turtlesim/background_b", blue);
 
 	ROS_INFO("Re-get Backgroud Color[%d, %d, %d]", red, green, blue);
 
