@@ -89,7 +89,7 @@ find_package(catkin REQUIRED COMPONENTS ...
 
     * 启动节点时需要额外输入创建的海龟名称，必须为turtle2 和 turtle1 
 
-    *需要利用[重定向]改变节点名称：rosrun template_pkg turtle_tf_broadcaster __name:=tf_turtle1  /turtle1
+    *需要利用[重定向]改变节点名称：rosrun template_pkg tf_turtle_broadcaster __name:=tf_turtle1  /turtle1
     (其中节点名称改变为了tf_turtle1)
 
     订阅海龟位置的topic话题，回调函数中创建tf广播器，广播出tf坐标系，可以由全局共享

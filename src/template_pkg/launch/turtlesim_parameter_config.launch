@@ -6,7 +6,10 @@
 		<param name="turtle_name1"   value="Tom"/>
 		<param name="turtle_name2"   value="Jerry"/>
 
-		<rosparam file="$(find learning_launch)/config/param.yaml" command="load"/>
+		<rosparam file="$(find template_pkg)/config/param.yaml" command="load"/>
+		<!-- /turtlesim_node/group/C  就是load之后的全局参数名称
+			/turtlesim_node/group/D -->
+
 	</node>
 
     <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key" output="screen"/>
